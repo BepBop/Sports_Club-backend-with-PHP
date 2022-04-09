@@ -38,8 +38,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: darkblue;
-    cursor: none;
-
+    cursor: url("curse.png") 0 0, auto;
 }
 
 #blue.next {
@@ -49,6 +48,7 @@ body {
 }
 
 #blue.color_drop {
+    cursor: none;
     animation: animation1 2s ease-out 1;
     background-color: transparent;
 }
@@ -120,6 +120,7 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
+
 }
 
 nav a {
@@ -129,6 +130,7 @@ nav a {
     text-decoration: none;
     font-family: Gilroy-ExtraBold, sans-serif;
     transition-duration: 0.35s;
+
 }
 
 nav a:hover {
@@ -243,7 +245,7 @@ button {
     background-color: rgba(1, 1, 1, 0.2);
     color: rgb(255, 255, 255);
     border: medium solid;
-    font-size:  6vmin;
+    font-size: 6vmin;
     padding: 1% 1.5%;
     cursor: pointer;
 }
@@ -350,7 +352,7 @@ button {
     justify-content: center;
     height: 100%;
     width: 100%;
-    font-family: "Roboto Thin", sans-serif;
+    font-family: "Roboto Light", sans-serif;
     color: #000e8d;
     font-size: 12vw;
 
@@ -397,7 +399,7 @@ button {
     }
 
     button {
-       font-size: 7vmin;
+        font-size: 7vmin;
     }
 
 }

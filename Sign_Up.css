@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("Gilroy-Bold.ttf");
+}
+
+::-webkit-input-placeholder {
+    padding: 2%;
+}
+
+::-moz-placeholder {
+    padding: 2%;
+}
+
+#fullbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+label {
+    font-family: "Roboto Medium", sans-serif;
+    color: darkblue;
+    font-size: 6.5vh;
+}
+
+input {
+    width: 25vw;
+    height: 6.5vh;
+    border: 2px solid black;
+    font-size: 5vmin;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 100vh;
+    background: #000e8d;
+
+    font-family: Gilroy-Bold;
+    font-size: 10vmin;
+
+    text-align: center;
+    color: white;
+}

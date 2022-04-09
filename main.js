@@ -1,15 +1,14 @@
-new fullpage('#fullpage', {
+new fullpage("#fullpage", {
     autoScrolling: true,
     continuousVertical: true,
     scrollingSpeed: 600,
-
 });
 
 let xyz = document.getElementById("main");
-xyz.addEventListener('click', () => {
-    xyz.scrollLeft = xyz.scrollLeft >= document.body.scrollWidth ? 0 : document.body.scrollWidth;
+xyz.addEventListener("click", () => {
+    xyz.scrollLeft =
+        xyz.scrollLeft >= document.body.scrollWidth ? 0 : document.body.scrollWidth;
 });
-
 
 let W = document.getElementById("pica");
 W.addEventListener("load", () => {
@@ -30,35 +29,35 @@ Z.addEventListener("load", () => {
 
 function OG(a, b) {
     let flag;
-    let images
-        = ['0.webp',
-        '1.webp',
-        '2.webp',
-        '3.webp',
-        '4.webp',
-        '5.webp',
-        '6.webp',
-        '7.webp',
-        '8.webp',
-        '9.webp',
-        '10.webp',
-        '11.webp',
-        '12.webp',
-        '13.webp',
-        '14.webp',
-        '15.webp',
-        '16.webp',
-        '17.webp',
-        '18.webp',
-        '19.webp',
-        '20.webp',
-        '21.webp',
-        '22.webp',
-        '23.webp',
-        '24.webp',
-        '25.webp',
-        '26.webp',
-        '27.webp',
+    let images = [
+        "0.webp",
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+        "10.webp",
+        "11.webp",
+        "12.webp",
+        "13.webp",
+        "14.webp",
+        "15.webp",
+        "16.webp",
+        "17.webp",
+        "18.webp",
+        "19.webp",
+        "20.webp",
+        "21.webp",
+        "22.webp",
+        "23.webp",
+        "24.webp",
+        "25.webp",
+        "26.webp",
+        "27.webp",
     ];
 
     this.addEventListener("mouseover", () => {
@@ -71,11 +70,10 @@ function OG(a, b) {
     });
 
     function ab() {
-
         const context = this;
 
         function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
+            return new Promise((resolve) => setTimeout(resolve, ms));
         }
 
         async function delay() {
@@ -95,15 +93,15 @@ function OG(a, b) {
     }
 }
 
-let sections = document.querySelectorAll('.image');
+let sections = document.querySelectorAll(".image");
 let options = {
-    threshold: 0.5
+    threshold: 0.5,
 };
 
 let callback = (entries) => {
     entries.forEach((entry) => {
         let target = entry.target;
-        if (entry.intersectionRatio >= 0.2) {
+        if (entry.intersectionRatio >= 0.25) {
             target.classList.add("meow");
             target.classList.add("o");
         } else {
@@ -114,10 +112,9 @@ let callback = (entries) => {
 
 let observer = new IntersectionObserver(callback, options);
 
-sections.forEach((section,) => {
+sections.forEach((section) => {
     observer.observe(section);
 });
-
 
 let sections2 = document.getElementById("blue");
 
@@ -128,7 +125,6 @@ let sections5 = document.getElementById("three");
 let sections6 = document.getElementById("logo");
 
 sections2.addEventListener("click", () => {
-
     sections2.classList.add("color_drop");
 
     setTimeout(myfunction, 2000);
@@ -137,7 +133,6 @@ sections2.addEventListener("click", () => {
         sections3.classList.add("blue_strip");
         sections4.classList.add("blue_strip");
         sections5.classList.add("blue_strip");
-
     }
 
     setTimeout(myfunction2, 2000);
@@ -153,7 +148,6 @@ sections2.addEventListener("click", () => {
     setTimeout(myfunction3, 5000);
 
     function myfunction3() {
-
         sections2.classList.remove("color_drop");
         sections2.classList.add("next");
 
@@ -171,35 +165,27 @@ sections2.addEventListener("click", () => {
 
         sections6.classList.remove("move_diagonal");
         sections6.classList.add("next");
-
-
     }
 });
 
-
-let roundLogEl = document.querySelector('.dot');
+let roundLogEl = document.querySelector(".dot");
 
 let callback2 = (entries) => {
     entries.forEach((entry) => {
-
-
-        if (entry.intersectionRatio >= 0.2 && entry.intersectionRatio <= 0.9) {
-            console.log(entry.intersectionRatio);
-
+        if (entry.intersectionRatio > 0 && entry.intersectionRatio < 0.75) {
             anime({
                 targets: roundLogEl,
                 innerHTML: [0, 50],
-                easing: 'easeInOutQuad',
+                easing: "easeInOutQuad",
                 round: 1,
                 duration: 2800,
             });
-
         }
     });
 };
 
 let observer2 = new IntersectionObserver(callback2, options);
 
-sections.forEach((roundLogEl,) => {
+sections.forEach((roundLogEl) => {
     observer2.observe(roundLogEl);
 });

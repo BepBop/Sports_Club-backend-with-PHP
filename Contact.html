@@ -8,8 +8,8 @@
           type="image/x-icon"/>
     <link href="Contact.css" rel=stylesheet>
     <link href="jquery-waves.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js"></script>
 
 </head>
 
@@ -19,19 +19,16 @@
 
     <div class="sign">Sign up to the <br> club! &#128512</div>
     <div class="sign2">Coming this summer.</div>
-    <div class="form">
+    <form action="Contact.php" method="get" class="form">
         <label>
-            <input class="emailinput" placeholder="Email" required size="320" type="email">
+            <input class="emailinput" placeholder="Email" required size="320" type="email" name="email">
+            <input type="submit" data-waves data-waves-background-color="rgba(0, 0, 200, 0.35)"
+                   data-waves-duration="400"
+                   data-waves-hide-duration="400"
+                   disabled="disabled" id='submitBtn'
+                   onclick="validateEmail()" type="submit" value="I'm Interested">
         </label>
-        <button data-waves data-waves-background-color="rgba(0, 0, 200, 0.35)" data-waves-duration="400"
-                data-waves-hide-duration="400"
-                disabled="disabled" id='submitBtn'
-                onclick="validateEmail()" type="button">
-            I'm Interested
-        </button>
-
-    </div>
-
+    </form>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

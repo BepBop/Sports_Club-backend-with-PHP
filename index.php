@@ -1,5 +1,4 @@
 <!doctype html>
-<!--suppress HtmlUnknownAnchorTarget -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +14,14 @@
     <link href="fullpage.css" rel="stylesheet" type="text/css"/>
     <link href="jquery-waves.min.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+            integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="fullpage.js"></script>
 </head>
 <body>
@@ -25,8 +32,9 @@
         <img alt="error" id="logo" src="Logo.svg"/>
 
         <nav>
-            <a href="About.html" rel="noreferrer noopener" target="_blank">About</a>
-            <a href="Contact.html" rel="noreferrer noopener" target="_blank">Contact</a>
+            <a href="Login_HTML.php" rel="noreferrer noopener" target="_blank">Login</a>
+            <a href="Sign_Up_HTML.php" rel="noreferrer noopener" target="_blank">Sign Up</a>
+            <a href="Contact.html" rel="noreferrer noopener" target="_blank">Newsletter</a>
             <a href="Price.html" rel="noreferrer noopener" target="_blank">Pricing</a>
         </nav>
 
@@ -56,20 +64,20 @@
             <div class="skate">
                 <img alt="skateboard" class="image" id="pica" src="P1.webp"/>
                 <div class="animated_text">
-                    <a href="About.html#3" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#3" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#3" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#3" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#3" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#3" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#3" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#3" rel="noreferrer noopener" target="_blank"></a>
                     <div class="text" data-text="Skateboarding">Skateboarding</div>
                 </div>
             </div>
 
             <div class="foot">
                 <div class="animated_text">
-                    <a href="About.html#4" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#4" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#4" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#4" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#4" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#4" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#4" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#4" rel="noreferrer noopener" target="_blank"></a>
                     <div class="text" data-text="Football">Football</div>
                 </div>
                 <img alt="Football" class="image" id="picb" src="P2.webp"/>
@@ -79,10 +87,10 @@
 
                 <img alt="Athletics" class="image" id="picc" src="P3.webp"/>
                 <div class="animated_text">
-                    <a href="About.html#5" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#5" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#5" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#5" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#5" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#5" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#5" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#5" rel="noreferrer noopener" target="_blank"></a>
                     <div class="text" data-text="Athletics">Athletics</div>
                 </div>
 
@@ -90,10 +98,10 @@
 
             <div class="bask">
                 <div class="animated_text">
-                    <a href="About.html#6" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#6" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#6" rel="noreferrer noopener" target="_blank"></a>
-                    <a href="About.html#6" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#6" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#6" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#6" rel="noreferrer noopener" target="_blank"></a>
+                    <a href="About.php#6" rel="noreferrer noopener" target="_blank"></a>
                     <div class="text" data-text="Basketball">Basketball</div>
                 </div>
                 <img alt="Basketball" class="image" id="picd" src="P4.webp"/>
@@ -123,9 +131,9 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="jquery-waves.min.js"></script>
 

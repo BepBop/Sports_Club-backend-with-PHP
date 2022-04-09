@@ -1,3 +1,5 @@
+<?php session_start();
+if (!$_SESSION['logged'] || !isset($_COOKIE['Login'])) header('Location: http://localhost/Sports_Club/Login_HTML.php'); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,14 +12,34 @@
     <title>About Us</title>
     <link href="About.css" rel="stylesheet">
     <link href="fullpage.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @font-face {
+            font-family: Gilroy-Bold;
+            src: url("Gilroy-Bold.ttf");
+        }
 
+        #new {
+            display: flex;
+            justify-content: flex-end;
+            padding: 2% 2% 0 2%;
+            color: #000e8d;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: Gilroy-Bold, sans-serif;
+        }
+
+        #new a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<div id="fullpage">
 
+<div id="fullpage">
     <div class="section" data-anchor="1">
+        <div id="new"><a href="Login_HTML.php">Log Out!</a></div>
         <div class="Intro">
-            <div class="about">About Us</div>
+            <div class="about">Welcome <?php echo $_SESSION['name'] ?></div>
         </div>
     </div>
 
@@ -27,8 +49,8 @@
                 What began as an opportunity to bring sports to urban masses has evolved into coaching
                 athletes at professional level.
                 <br> <br>
-                Dedicated to the best possible coaching, we proudly are at the forefront of urban
-                sports while still maintaining that familiar, neighborhood feel.
+                You are registered as <?php echo $_SESSION['name'] ?> with the following details: <br>
+                <?php echo $_SESSION['email'] ?> & <?php echo $_SESSION['phone'] ?>
             </div>
         </div>
     </div>
