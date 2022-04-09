@@ -22,7 +22,6 @@
             integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="fullpage.js"></script>
 </head>
 <body>
 <div id="fullpage">
